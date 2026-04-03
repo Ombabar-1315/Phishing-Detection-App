@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- ── App Icon placeholder ── -->
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/primary_blue"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ── App Title ── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phishing Detector"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- ── Subtitle ── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay safe from phishing attacks"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- ── Card: Manual URL ── -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <Button
+                android:id="@+id/btn_manual_url"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Enter URL Manually"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary_blue"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── Card: Scan QR ── -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <Button
+                android:id="@+id/btn_scan_qr"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Scan QR Code"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple_scan"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── Card: Clipboard ── -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <Button
+                android:id="@+id/btn_clipboard"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Check Copied Link"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/teal_clipboard"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="View Scan History"
+            android:textSize="15sp"
+            android:textColor="@color/primary_blue"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS Auto-Scan is active in the background"
+            android:textSize="12sp"
+            android:textColor="@color/safe_green"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

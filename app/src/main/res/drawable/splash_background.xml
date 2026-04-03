@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    splash_background.xml
+    Dark blue gradient background for the splash screen.
+
+    Location: app > res > drawable > splash_background.xml
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:type="linear"
+        android:angle="135"
+        android:startColor="#0D1B3E"
+        android:centerColor="#0F3460"
+        android:endColor="#1565C0"/>
+
+</shape>

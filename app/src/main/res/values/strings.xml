@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    strings.xml
+    All text strings used in the app.
+
+    Location to save this file in Android Studio:
+    app > res > values > strings.xml
+
+    REPLACE the existing strings.xml content with this.
+-->
+<resources>
+    <string name="app_name">Phishing Detector</string>
+    <string name="btn_manual">Enter URL Manually</string>
+    <string name="btn_qr">Scan QR Code</string>
+    <string name="btn_clipboard">Check Copied Link</string>
+    <string name="btn_history">View Scan History</string>
+    <string name="btn_scan">Scan Now</string>
+    <string name="btn_back">Scan Another URL</string>
+    <string name="btn_report">Report This URL</string>
+    <string name="label_url_hint">https://example.com</string>
+    <string name="label_result">Scan Result</string>
+    <string name="label_history">Scan History</string>
+    <string name="msg_empty_url">Please enter a URL</string>
+    <string name="msg_scanning">Scanning...</string>
+    <string name="msg_no_clipboard">Nothing copied to clipboard</string>
+    <string name="msg_scan_cancelled">Scan cancelled</string>
+    <string name="msg_sms_enabled">SMS Auto-Scan is active</string>
+    <string name="notification_channel_name">Phishing Alerts</string>
+    <string name="notification_title_phishing">Phishing link detected in SMS!</string>
+    <string name="notification_title_suspicious">Suspicious link in SMS</string>
+</resources>

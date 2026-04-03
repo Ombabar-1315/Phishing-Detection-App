@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    themes.xml  — UPDATED VERSION with splash theme added
+    Location: app > res > values > themes.xml
+    REPLACE your existing themes.xml with this full file.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Main app theme used by all screens except splash -->
+    <style name="Theme.PhishingDetector"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_clipboard</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_blue</item>
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+
+    <!-- Splash screen theme — dark blue, no action bar, no title -->
+    <style name="Theme.Splash"
+        parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@color/splash_bg</item>
+        <item name="android:statusBarColor">@color/splash_bg</item>
+        <item name="android:navigationBarColor">@color/splash_bg</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+</resources>

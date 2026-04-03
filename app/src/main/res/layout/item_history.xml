@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_history.xml
+    One row in the history list — shows URL, risk level, score, source, date.
+
+    Location to save this file in Android Studio:
+    app > res > layout > item_history.xml
+-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- ── Row 1: URL + Risk Level ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp">
+
+            <!-- URL text — takes remaining space -->
+            <TextView
+                android:id="@+id/tv_history_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="https://example.com"
+                android:textSize="13sp"
+                android:textColor="@color/text_primary"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:paddingEnd="8dp"/>
+
+            <!-- Risk level badge -->
+            <TextView
+                android:id="@+id/tv_history_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAFE"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@color/safe_green"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <!-- ── Divider ── -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- ── Row 2: Score + Source + Date ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_history_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/100"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:paddingEnd="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_history_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MANUAL"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:paddingEnd="12dp"/>
+
+            <!-- Date pushed to right side -->
+            <TextView
+                android:id="@+id/tv_history_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="01 Jan 2025"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
