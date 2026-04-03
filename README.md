@@ -283,22 +283,6 @@ git clone https://github.com/your-username/Phishing-Detection-App.git
 
 
 
-## 📌 Future Enhancements
-
-* AI-based phishing detection
-* Browser integration for real-time protection
-* Advanced threat intelligence system
-* Cloud-based detection engine
-
-
-## 👨‍💻 Author
-Name :- Om Bharat Babar
-Diploma in Computer Engineering
-
-## 📄 License
-This project is for educational purposes.
-
-
 
 ---
 
@@ -312,6 +296,7 @@ This project is for educational purposes.
 
 ## 👨‍💻 Author
 Name :- Om Bharat Babar
+
 Diploma in Computer Engineering
 
 ## 📄 License
